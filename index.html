@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <title>DMP Slider</title>
+    <script src="app.js"></script>
+</head>
+<body>
+
+    <div class="carousel-container">
+        <!-- Button left -->
+        <button class="sliderButton left" onclick="changeImg(-1)">&#10094;</button>
+        <div class="carousel-slider-wrapper">
+    
+            <!-- Slider 1 -->
+            <div class="slider active">
+                <div class="slider-display">
+                    <img draggable="false" src="Pictures/without_contact_information.png" alt="Without Organizing authors and ORCID IDs" class="after-img">
+                    <img draggable="false" src="Pictures/with_contact_information.png" alt="After Using DMP Tool and organizing authors and ORCID IDs" class="before-img">
+                    <div class="slider-handle"></div>
+                    <div class="drag-button">
+                        <span class="arrow-left">&#10094;</span>
+                        <span class="arrow-right">&#10095;</span>
+                    </div>
+                </div>
+                <div hidden class="slider-text">
+                    <p hidden class="slider-text-left">Organizing contact information and ORCID IDs in the beginning in your DMP ensures that you have all information needed early and that this information is included in important documents, such as your DMP, final report, and all derivative products.</p>
+                    <p hidden class="slider-text-right">When contact information and ORCID IDs are not established and saved during the beginning stages of a project, it can cause unnecessary stress at a project's finish line. USDOT requires the use of ORCID IDs for all researchers, so obtaining one early will make the research submission process smoother.</p>
+                </div>
+            </div>
+            <div  class="slider">
+                <div class="slider-display">
+                    <img draggable="false"src="Pictures/without_metadata_open_formats.png" alt="Without using Required Metadata Schema and Open Data Formats" class="after-img">
+                    <img draggable="false"src="Pictures/with_metadata_open_formats.png" alt="With using the Required DCAT-US Schema and Open Data Formats" class="before-img">
+                    <div class="slider-handle"></div>
+                    <div class="drag-button">
+                        <span class="arrow-left">&#10094;</span>
+                        <span class="arrow-right">&#10095;</span>
+                    </div>
+                </div>
+                <div hidden class="slider-text">
+                    <p hidden class="slider-text-left">You can easily create the required DCAT-US metadata file for your final data package using the NTL DCAT-US generator. This generates the JSON metadata file for you. Additionally, by planning for open format versions before data creation begins, you can make the transformation from original to open access data much easier. You final data package should include you data, preferably in an open format, your README, the DCAT-US metadata file, your data dictionary, and your DMP.</p>
+                    <p hidden class="slider-text-right">When you don't prepare to create open data formats and know your research output, you may end up with a disorganized mess of proprietary formats, data copies, confusing file name and organization, or even missing data. Additionally, preparing for the DCAT-US metadata file in advance and knowing it's required will make necessary steps clear at the end of a project. Organizing and having a plan from the beginning will make organizing, transforming, and creating metadata for your data easier.</p>
+                </div>
+            </div>
+            <div class="slider">
+                <div class="slider-display">
+                    <img draggable="false"src="Pictures/without_pii_secured.png" alt="Without Personally Identifiable Information (PII) secured and the dataset de-identified" class="after-img">
+                    <img draggable="false"src="Pictures/with_pii_secured.png" alt="With Personally Identifiable Information (PII) secured and the dataset de-identified" class="before-img">
+                    <div class="slider-handle"></div>
+                    <div class="drag-button">
+                        <span class="arrow-left">&#10094;</span>
+                        <span class="arrow-right">&#10095;</span>
+                    </div>
+                </div>
+                <div hidden class="slider-text">
+                    <p hidden class="slider-text-left">By creating and updating your DMP throughout the research process, you can accurate plan and account for any Personally Identifiable Information (PII) that your project creates. Your DMP is an opportunity to acknowledge and plan for USDOT policies, funding policies, IRB rules, and more. Additionally, acknowledging and preparing for sensitive data will help you better organize your data when it comes time for publication, making the process easier for yourselves and your chosen repository's data steward or data curator.</p>
+                    <p hidden class="slider-text-right">It is important before publication to secure all Personally Identifiable Information (PII) on a private server not accessible to the public. Additionally, the data must be de-identified before submitting to a repository. If the data is not de-identified, the dataset will be rejected by the repository. Having a plan for sensitive data in place in your DMP ensures you keep a firm handle on participant consent forms, IRB requirements and approvals, sensitive data points, and requirements for PII by repositories.</p>
+                </div>
+            </div>
+            <div class="slider">
+                <div class="slider-display">
+                    <img draggable="false"src="Pictures/without_archive_plan.png" alt="Without establishing and following through with an archival plan and finding a suitable repository" class="after-img">
+                    <img draggable="false"src="Pictures/with_archive_plan.png" alt="With finding a suitable repository before the project begins and following through with the archival plan" class="before-img">
+                    <div class="slider-handle"></div>
+                    <div class="drag-button">
+                        <span class="arrow-left">&#10094;</span>
+                        <span class="arrow-right">&#10095;</span>
+                    </div>
+                    
+                </div>
+                <div hidden class="slider-text">
+                    <p hidden class="slider-text-left">A clear preservation and archiving plan written during the project's beginning stages in the DMP can make all the difference at the end of a project.</p>
+                    <p hidden class="slider-text-right">Finding a suitable repository for your data can be difficult, especially if you are new to dataset publication. All USDOT created and USDOT funded project must be made publicly accessible at the project's end. This includes all datasets, code, charts, tables, graphs, interactive resources, and final reports. You can find DOT approved repository at <a href="url">https://doi.org/10.21949/1520566</a>. If you are unsure which repository would be suit your data, choosing NTL's repository <a href="https://rosap.ntl.bts.gov/">ROSA P or <a href="https://zenodo.org/">Zenodo</a> make great options.</p>
+                </div>
+            </div>
+                
+            
+        </div>
+        
+        <!-- Navigation button right -->
+        <button class="sliderButton right" onclick="changeImg(1)">&#10095;</button>
+    </div>
+
+    
+</body>
+</html>
