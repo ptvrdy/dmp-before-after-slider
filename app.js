@@ -62,10 +62,7 @@ function initBeforeAfterSlider(slider) {
   doMove((slider.getBoundingClientRect().right - slider.getBoundingClientRect().left) * initialSliderPosition);
 }
 
-var currentImg = 0;
-document.addEventListener("DOMContentLoaded", function() {
-  changeImg(currentImg);
-});
+
 
 function changeImg(increment) {
   const slides = document.querySelectorAll('div.slider');
@@ -98,7 +95,10 @@ function copyText(event) {
   });
 }
 
-document.addEventListener('DOMContentLoaded', function() {
+var currentImg = 0;
+document.addEventListener("DOMContentLoaded", function() {
+  changeImg(currentImg);
+
   var buttons = document.querySelectorAll('.button');
   buttons.forEach(function(button) {
       button.addEventListener('click', copyText)
