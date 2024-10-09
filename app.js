@@ -1,6 +1,3 @@
-// configurables
-const initialSliderPosition = 0.76
-const sliderTextThreshold = .25
 
 // Handle the before-after slider functionality
 function initBeforeAfterSlider(slider) {
@@ -10,6 +7,10 @@ function initBeforeAfterSlider(slider) {
   const leftText = slider.querySelector(".slider-text-left")
   const rightText = slider.querySelector(".slider-text-right")
   const slideText = slider.querySelector(".slider-text")
+
+  // configurables
+  const initialSliderPosition = 0.76
+  const sliderTextThreshold = .25
 
   const doMove = (offsetX) => {
     
