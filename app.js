@@ -1,4 +1,3 @@
-
 // Handle the before-after slider functionality
 function initBeforeAfterSlider(slider) {
   const sliderHandle = slider.querySelector('.slider-handle');
@@ -14,6 +13,8 @@ function initBeforeAfterSlider(slider) {
 
   const doMove = (offsetX) => {
     
+    console.log("Offset X is " + offsetX)
+
     const sliderWidth = slider.offsetWidth;
     const newOffsetX = Math.max(0, Math.min(offsetX, sliderWidth)); // Keep within bounds
 
@@ -66,7 +67,6 @@ function initBeforeAfterSlider(slider) {
 
 function changeImg(increment) {
   const slides = document.querySelectorAll('div.slider');
-  console.log("Calling by " + slides.length)
   slides[currentImg].classList.remove('active');
 
   currentImg += increment;
@@ -96,7 +96,7 @@ function copyText(event) {
 }
 
 var currentImg = 0;
-document.addEventListener("DOMContentLoaded", function() {
+window.addEventListener("load", function() {
   changeImg(currentImg);
 
   var buttons = document.querySelectorAll('.button');
