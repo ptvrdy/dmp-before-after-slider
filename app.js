@@ -66,7 +66,7 @@ function initBeforeAfterSlider(slider) {
 
 function changeImg(increment) {
   const slides = document.querySelectorAll('div.slider');
-  console.log("Calling by " + increment)
+  console.log("Calling by " + slides.length)
   slides[currentImg].classList.remove('active');
 
   currentImg += increment;
